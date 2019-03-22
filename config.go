@@ -16,10 +16,11 @@ type SASL struct {
 }
 
 type Cluster struct {
-	Name             string
-	Brokers          []string `yaml:"brokers"`
-	SASL             *SASL    `yaml:"SASL"`
-	SecurityProtocol string   `yaml:"security-protocol"`
+	Name              string
+	Brokers           []string `yaml:"brokers"`
+	SASL              *SASL    `yaml:"SASL"`
+	SecurityProtocol  string   `yaml:"security-protocol"`
+	SchemaRegistryURL string   `yaml:"schema-registry-url"`
 }
 
 type Config struct {
